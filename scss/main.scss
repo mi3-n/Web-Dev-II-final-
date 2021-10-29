@@ -498,47 +498,6 @@ body {
     //   padding: 40px 0;
     // }
 
-    .newsletter {
-        // border: 1px solid red;
-
-        .newsletter {
-            font-size: 34px;
-            font-weight: bold;
-        }
-
-       .email {
-            width: 60%;
-            height: 3vw;
-        }
-        .submit {
-            width: 20%;
-            height: 3vw;
-            @include btn($color-beige);
-            font-size: 12px;
-            @media (max-width: 900px) {
-                margin-bottom: 4%;
-            }
-            
-            
-            &:hover{
-                background-color: #FDEFEF;
-                border: 2px solid $color-beige;
-                
-            }
-            @media (max-width: 900px){
-                width: 30%;
-
-            }
-            @media (max-width: 430px){
-                font-size: 12px;
-                width: 30%;
-                height: 5vw;
-            }
-        }
-
-
-    }
-
     &-header {
       display: flex;
       align-items: center;

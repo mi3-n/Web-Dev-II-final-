@@ -14,6 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else if (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
         $error['email'] = 'email';
     }
+    if ($post['day'] === '') {
+        $error['day'] = 'blank';
+    }
     if ($post['contact'] === '') {
         $error['contact'] = 'blank';
     }
@@ -40,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <!-- お問合せフォーム画面 -->
     <div class="container">
-        <form action="" method="POST" novalidate>
+        <form action="index.php" method="POST" novalidate>
             <p class="book">Book</p>
             <div class="form-group">
                 <div class="row">
@@ -73,9 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
-
-
-
                 <div class="form-group">
                 <div class="row">
                     <div class="col-2">
@@ -83,22 +83,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     
                     <div class="col-md-8">
-                        <input name="date" type="date" name="day" id="inputDay"/>
+                        <input type="date" name="day" id="inputDay" class="form-control" value="<?php echo htmlspecialchars($post['day']); ?>" required autofocus>
                         <?php if ($error['day'] === 'blank'): ?>
                             <p class="error_msg">※Please select a day</p>
                         <?php endif; ?>
                     </div>
                 </div>
             </div>
-
-
-
-                    
-
-
-
-
-
             </div>
             <div class="form-group">
                 <div class="row">
@@ -116,7 +107,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row">
                 <div class="col-8 offset-4">
-                    <button id="sub" type="submit">submit</button>
+                    <!-- <a href="confirm.php"> -->
+                        <button id="sub" type="submit" >submit</button>
+
+                    <!-- </a> -->
                 </div>
             </div>
         </form>

@@ -373,53 +373,6 @@ body {
   background-color: #FFE3E3;
 }
 
-.footer .newsletter .newsletter {
-  font-size: 34px;
-  font-weight: bold;
-}
-
-.footer .newsletter .email {
-  width: 90%;
-  height: 3vw;
-}
-
-.footer .newsletter .submit {
-  height: 3vw;
-  letter-spacing: 1px;
-  color: #6C4A4A;
-  background-color: #EFB7B7;
-  border: 2px solid #EFB7B7;
-  outline: none;
-  cursor: pointer;
-  transition: all 1s;
-  font-size: 12px;
-}
-
-@media (max-width: 900px) {
-  .footer .newsletter .submit {
-    margin-bottom: 4%;
-  }
-}
-
-.footer .newsletter .submit:hover {
-  background-color: #FDEFEF;
-  border: 2px solid #EFB7B7;
-}
-
-@media (max-width: 900px) {
-  .footer .newsletter .submit {
-    width: 30%;
-  }
-}
-
-@media (max-width: 430px) {
-  .footer .newsletter .submit {
-    font-size: 12px;
-    width: 30%;
-    height: 5vw;
-  }
-}
-
 .footer-header {
   display: flex;
   align-items: center;

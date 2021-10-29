@@ -129,36 +129,26 @@
         </div>
             
     </section>
-  
-  
- 
-  
+
   <section class="get">
     <div class="inspired">
       <p>Get Inspired</p>
     </div>
     <div class="inst">
-      <a class="box" href="#"><img src="/images/1.JPG" alt=""></a>
-      <a class="box" href="#"><img src="/images/2.JPG" alt=""></a>
-      <a class="box" href="#"><img src="/images/3.JPG" alt=""></a>
+      <a class="box" href="#"><img src="/img/b.jpg" alt=""></a>
+      <a class="box" href="#"><img src="/img/br.jpg" alt=""></a>
+      <a class="box" href="#"><img src="/img/g.jpg" alt=""></a>
+    </div>
+    <div class="inst">
+      <a class="box" href="#"><img src="/img/gg.jpg" alt=""></a>
+      <a class="box" href="#"><img src="/img/ki.jpg" alt=""></a>
+      <a class="box" href="#"><img src="/img/nu.jpg" alt=""></a>
     </div>
     <button type="button" class="vi-btn">VIEW MORE</button>
   </section>
 
-  
-  
- 
-  
   <!--Footer-->
   <footer class="footer">
-    <div class="newsletter">
-      <h3 class="center">JOIN THE FINE CREW</h3>
-      <p class="deals">Insider info on new arrivals, early access, and everything fine.</p>
-      <form>
-      <input class="email" type="text" placeholder="Email address">
-      <input class="submit" type="submit" value="SUBSCRIBE">
-      </form>
-    </div>
     <div class="footer-social-media">
       <ul class="social-media">
         <li class="social-media-item">
